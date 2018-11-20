@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Rectangles test - Bohdan Ivanov</title>
+</head>
+<body>
+    <div class="container">
+        <div id="notification">Warning: Please type value between 3 to 30</div>
+        <div class="header">
+            <h2 id="title">Please enter a value from 3 to 30</h2>
+            <input id="quantity" type="number" maxlength="2"><br> 
+        </div>
+        <div class="rectContainer">
+            <button class="generateButton" onclick=initRectangles()>
+                Draw initial
+            </button>  
+            <div id="initialRectangles">
+                <canvas id="initialCanvas"></canvas>
+            </div>
+        </div>
+        <div class="rectContainer">
+            <button class="generateButton" onclick=createUpdatedRectangles()>
+                Draw result
+            </button>
+            <div id="updatedRectangles">
+                <canvas id="finalCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./js/utils/helpers.js"></script>
+<script type="text/javascript" src="./js/initialRectangles.js"></script>
+<script type="text/javascript" src="./js/updatedRectangles.js"></script>
+</html>
